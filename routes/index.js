@@ -4,8 +4,8 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    title: 'Personal-Mission-Statement',
-    S1:'I believe by knowing what I value, I truly know what I want.' ,
+    title: 'Home',
+    S1:'I believe by knowing what I value, I truly know what I want.' ,    
     l1:'active',
     l2: '',
     l3: '',
@@ -27,7 +27,7 @@ router.get('/about', function(req, res, next) {
 });
 /* GET Products page. */
 router.get('/products', function(req, res, next) {
-  res.render('index', { 
+  res.render('products', { 
     title: 'Products', 
     S1:'',
     l1: '',
@@ -38,8 +38,8 @@ router.get('/products', function(req, res, next) {
 });
 /* GET  services page. */
 router.get('/services', function(req, res, next) {
-  res.render('index', { 
-    title: 'Services',
+  res.render('services', { 
+    title: 'services',
     S1:'',
     l1: '',
     l2: '',
