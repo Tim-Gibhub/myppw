@@ -7,5 +7,5 @@ Date:           OCT 16,2020
 
 This is database URL setting.
 */
-//module.exports.URL = "mongodb://db_user231:gTP49rYk0NJZBstZ@cluster0.cflvj.mongodb.net/myppw?retryWrites=true&w=majority";
-module.exports.URL = "mongodb://localhost:27017/myppw";
+module.exports.URL = "mongodb+srv://db_user231:Bltz123@cluster0.cflvj.mongodb.net/myppw?retryWrites=true&w=majority";
+//module.exports.URL = "mongodb://localhost:27017/myppw";

@@ -22,8 +22,8 @@ let app = express();
 let mongoose = require('mongoose');
 let DB = require('./DB');
 
-//mongoose.connect(DB.URL, {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect('mongodb://db_user231:AzfC0tOq6jzDx7ZO@cluster0.cflvj.mongodb.net/myppw?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(DB.URL, {useNewUrlParser: true, useUnifiedTopology: true});
+//mongoose.connect('mongodb+srv://db_user231:Bltz123@cluster0.cflvj.mongodb.net/myppw?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 let dbConnection = mongoose.connection; // alias
 
