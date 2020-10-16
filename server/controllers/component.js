@@ -15,7 +15,7 @@ let mongoose = require('mongoose');
 let Component = require('../models/component');
 
 module.exports.DisplayComponentList = (req, res, next) => {
-    console.log(req.session.username);
+    //console.log(req.session.username);
     if(req.session.username){  
         //res.render('home',{username : req.session.userName});
         

@@ -23,6 +23,7 @@ let mongoose = require('mongoose');
 let DB = require('./DB');
 
 mongoose.connect(DB.URL, {useNewUrlParser: true, useUnifiedTopology: true});
+//mongoose.connect('mongodb://db_user231:JwKLJTrQHXMbSuoI@cluster0.cflvj.mongodb.net/myppw');
 let dbConnection = mongoose.connection; // alias
 
 dbConnection.on('error', console.error.bind(console, 'connection error:'));
@@ -50,18 +51,23 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+// setup session
 app.use(session({
   secret :'Tim WWP', 
   resave : false,
   saveUninitialized: true, 
-  cookie : { maxAge : 60000*180 }
+  cookie : { maxAge : 60000 }
 }));
 app.use(express.static(path.join(__dirname, '../../public')));
 app.use(express.static(path.join(__dirname, '../../node_modules')));
 
 app.use('/', indexRouter);
+
+// for contact
 app.use('/component-list', componentRouter);
+// for login
 app.use('/login', loginRouter);
+
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
