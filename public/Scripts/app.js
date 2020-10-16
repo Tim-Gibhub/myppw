@@ -1,4 +1,11 @@
-// IIFE
+/* 
+Filename:       app.js
+Student’s Name: Jiyuan Huang 
+StudentID:      301083362
+Date:           OCT 16,2020
+
+There are some functions for form submit or others.
+*/
 (function(){
     function Start()
     {
@@ -34,7 +41,7 @@
             })
 
         }
-        
+
         let dangerButtons = document.getElementsByClassName("btn-danger");
 
         for (const button of dangerButtons) {

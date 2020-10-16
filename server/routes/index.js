@@ -6,6 +6,14 @@ let indexController = require('../controllers/index');
 
 /* GET home page. */
 router.get('/', indexController.DisplayHomePage);
+/* 
+Filename:       index.js
+Student’s Name: Jiyuan Huang 
+StudentID:      301083362
+Date:           OCT 16,2020
+
+This for index url setting.
+*/
 
 /* GET home page. */
 router.get('/home', indexController.DisplayHomePage);
